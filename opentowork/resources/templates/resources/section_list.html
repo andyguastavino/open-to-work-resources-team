@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Secciones</title>
+</head>
+<body>
+    <h1>Lista de Secciones</h1>
+    <a href="{% url 'section_create' %}">Crear Nueva Sección</a>
+    <ul>
+        {% for section in sections %}
+            <li>
+                {{ section.name }} - 
+                <a href="{% url 'section_edit' section.pk %}">Editar</a> - 
+                <a href="{% url 'section_delete' section.pk %}">Eliminar</a>
+            </li>
+        {% empty %}
+            <li>No hay secciones disponibles.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

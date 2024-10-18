@@ -1,0 +1,35 @@
+# Archivos de entorno virtual
+venv/
+env/
+envOpenToWork/
+*.pyc
+__pycache__/
+
+# Archivos de configuración de entorno
+*.env
+
+# Archivos de bases de datos locales
+db.sqlite3
+db.sqlite3-journal
+
+# Archivos de migración
+**/migrations/*
+
+# Archivos de caché de Django
+**/cache/*
+
+# Archivos de configuración de IDE y editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Archivos de logs
+*.log
+
+# Archivos de macOS
+.DS_Store
+
+# Archivos de entorno de Anaconda
+*.conda
+*.ipynb_checkpoints
